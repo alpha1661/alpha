@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Agency Name</title>
+  <style>
+    body {
+      margin:0; padding:0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+    a { text-decoration:none; color: inherit; }
+    .container { width: 90%; max-width: 1200px; margin: auto; }
+    header {
+      background: #0073e6;
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+    header h1 { font-size: 3em; margin:0; }
+    header p { font-size:1.2em; margin-top:10px; }
+    nav {
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding:10px 0;
+    }
+    nav .container { display: flex; justify-content: space-between; align-items: center; }
+    nav a:hover { color:#0073e6; }
+    .services {
+      background: #ffffff;
+      padding: 50px 0;
+    }
+    .services h2 { text-align:center; margin-bottom:40px; }
+    .service-card {
+      background:#fff;
+      border:1px solid #e0e0e0;
+      border-radius:8px;
+      padding:30px;
+      width:300px;
+      margin:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.05);
+      transition: transform .3s;
+    }
+    .service-card:hover { transform: translateY(-10px); }
+    .cards { display:flex; flex-wrap: wrap; justify-content:center; }
+    .contact {
+      background: #0073e6;
+      color: #fff;
+      padding: 60px 0;
+      text-align:center;
+    }
+    footer {
+      background:#1e1e1e;
+      color:#ccc;
+      padding:20px 0;
+      text-align:center;
+    }
+    @media(max-width:768px){
+      .cards { flex-direction: column; align-items: center; }
+      nav .container { flex-direction: column; gap:10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="logo"><a href="#">YourLogo</a></div>
+      <div class="menu">
+        <a href="#">Home</a> |
+        <a href="#services">Services</a> |
+        <a href="#portfolio">Portfolio</a> |
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <h1>Your Agency Name</h1>
+      <p>Professional Virtual Assistant • CSR • Appointment Setter Services</p>
+      <p>Helping businesses by managing supports, scheduling & communications</p>
+    </div>
+  </header>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <div class="service-card">
+          <h3>Virtual Assistance</h3>
+          <p>Admin tasks, email management, data entry & more.</p>
+        </div>
+        <div class="service-card">
+          <h3>Appointment Setting</h3>
+          <p>Scheduling meetings, confirming calls, followups.</p>
+        </div>
+        <div class="service-card">
+          <h3>Customer Support</h3>
+          <p>Responding to chats, calls & emails with professionalism.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio sample -->
+  <section id="portfolio" class="services">
+    <div class="container">
+      <h2>Portfolio / Work Samples</h2>
+      <div class="cards">
+        <div class="service-card">
+          <h3>Project One</h3>
+          <p>Sample: Appointment workflow design + confirmation email templates</p>
+        </div>
+        <div class="service-card">
+          <h3>Project Two</h3>
+          <p>Sample: Customer support chat resolution template</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: yourname@example.com</p>
+      <p>Upwork Profile: <a href="https://www.upwork.com/freelancers/~yourupworkid" style="color:#fff;">View Profile</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Your Agency / Name. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
